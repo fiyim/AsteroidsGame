@@ -34,8 +34,13 @@ public void keyPressed()
 
 	if (key == 's')
 	{
-		if (jimmy.getXDirection() > 0)
-			jimmy.accelerate(-.2);
+		jimmy.accelerate(-.2);
+	}
+
+	if (key == 'q')
+	{
+		jimmy.setXDirection(0.2);
+		jimmy.setYDirection(0.2);
 	}
 
 	if (key == 'd')
