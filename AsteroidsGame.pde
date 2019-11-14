@@ -39,8 +39,8 @@ public void keyPressed()
 
 	if (key == 'q')
 	{
-		jimmy.setXDirection(0.2);
-		jimmy.setYDirection(0.2);
+		jimmy.setXDirection(0);
+		jimmy.setYDirection(0);
 	}
 
 	if (key == 'd')
