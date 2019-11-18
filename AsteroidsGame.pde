@@ -37,12 +37,6 @@ public void keyPressed()
 		jimmy.accelerate(-.2);
 	}
 
-	if (key == 'q')
-	{
-		jimmy.setXDirection(0);
-		jimmy.setYDirection(0);
-	}
-
 	if (key == 'd')
 	{
 		jimmy.turn(5);
