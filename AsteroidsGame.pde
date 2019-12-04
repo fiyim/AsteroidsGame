@@ -30,7 +30,7 @@ public void setup()
 public void draw() 
 {
   //your code here
-  background(25,100,100);
+  background(0);
   for (int i = 0; i< stars.length; i++)
   {
   	stars[i].show();
@@ -49,7 +49,6 @@ public void draw()
   }
   for (int i = 0; i< toby.size(); i++)
   {
-  	fill(255,255,0);
   	toby.get(i).show();
   	toby.get(i).move();
   	for(int n = 0; n < tom.size(); n++)

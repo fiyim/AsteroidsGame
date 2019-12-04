@@ -14,11 +14,12 @@ class Bullet extends Floater
     	double dRadians =myPointDirection*(Math.PI/180);
     	myDirectionX = 5 * Math.cos(dRadians) + theShip.getXDirection();
     	myDirectionY = 5 * Math.sin(dRadians) + theShip.getYDirection();
-  		myColor = color(255,0,0);
+  		myColor = color(255,255,0);
 	}
 
 	public void show()
 	{
+		fill(myColor);
 		ellipse((float)myCenterX, (float)myCenterY, 4.00, 4.00);
 	}
 
