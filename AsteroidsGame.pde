@@ -67,12 +67,20 @@ public void draw()
   text("Score: " + score, 430, 480);
   text("Lives: " + lives, 370, 480);
   text("Round: " + rounds, 300, 480);
-  if (lives <= 0)
+  
+  if(rounds >= 4)
+  {
+  	background(0);
+  	textSize(70);
+  	fill(0,255,0);
+  	text("YOU WON!", 75,265);
+  }
+  else if (lives <= 0)
   {
   	background(0);
   	textSize(70);
   	fill(255,0,0);
-  	text("YOU LOST!", 75, 265);
+  	text("YOU LOST!", 65, 265);
   }
   else if (tom.size()==0)
   {
@@ -82,16 +90,10 @@ public void draw()
   	{
   		tom.add(new Asteroid());
   	}
-  }
-  else if(rounds >= 4)
-  {
-  	background(0);
-  	textSize(70);
-  	fill(0,255,0);
-  	text("YOU WON!", 75,265);
-  }
-  
+  } 
 }
+
+
 
 public void keyPressed() 
 {
@@ -127,6 +129,5 @@ public void keyPressed()
 		toby.add(new Bullet(jimmy));
 
 	}
-
 }
 
